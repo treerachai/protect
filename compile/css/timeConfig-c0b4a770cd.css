@@ -1,0 +1,23 @@
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+.time-wrapper {
+  width: 720px;
+  margin: 0 auto;
+  text-align: center; }
+  .time-wrapper .operate {
+    margin-top: 20px; }
+
+.p-time .item .time {
+  padding: 5px;
+  text-align: center; }
+
+.p-time .arror-r {
+  margin: 0 20px; }
+
+.arror-r svg {
+  vertical-align: bottom; }

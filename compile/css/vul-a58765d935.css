@@ -1,0 +1,23 @@
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+.check-wrapper .m-check {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px; }
+
+.m-check .content {
+  color: #666; }
+
+.m-check em {
+  color: #2583cb; }
+
+.m-check em.date {
+  color: #ff0000; }
+
+.table tbody tr td:nth-child(2) {
+  padding: 0 15px; }

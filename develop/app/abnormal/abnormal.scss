@@ -1,0 +1,131 @@
+@import '../../css/const';
+@import '../../css/mixin';
+
+//过滤部分
+.filt-wrapper .item{
+	margin-bottom: $spMiddle;
+}
+
+.input-filt{
+    margin-bottom: $spMiddle;
+	li.sub-item{
+		float: left;
+        width: 240px;
+		margin-right: $spMiddle;
+        .item-label{
+            display: inline-block;
+            width: 100px;
+            padding-right: $spSmall;
+            text-align: right;
+        }
+        input{
+            width: 140px;
+        }
+	}
+    li.sub-item:last-child{
+        margin-right: 0;
+    }
+}
+
+.check-filt{
+	label{
+		margin-right: $spMiddle;
+	}
+	input{
+		vertical-align: -2px;
+	}
+}
+
+.tools {
+    position: relative;
+}
+
+.check-ignore{
+    font-size: $fsMain;
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+}
+
+.operate{
+	margin-bottom: $spNormal;
+	
+	button{
+		@extend %normalBtn;
+	}
+}
+
+.abnormal-page-wrap .table{
+    thead tr{
+        th:nth-child(1) {
+            min-width: 80px;
+        }
+        th:nth-child(2) {
+            min-width: 130px;
+        }
+        th:nth-child(3) {
+            min-width: 80px;
+        }
+        th:nth-child(4) {
+            min-width: 135px;
+        }
+        th:nth-child(5) {
+            min-width: 135px;
+        }
+        th:nth-child(7) {
+            min-width: 100px;
+        }
+        th:nth-child(8) {
+            min-width: 100px;
+        }
+    }
+    tbody tr{
+        td:nth-child(6) {
+            text-align: left;
+        }
+        td:nth-child(7) {
+            text-align: left;
+        }
+        .handle-abnormal{
+            margin-right: $spNormal;
+        }
+        .handle-abnormal.z-na{
+            padding: 0 $spSmall;
+        }
+        .handle-ignore{
+            color: $cMain;
+            cursor: pointer;
+        }
+        .handle-ignore.z-na{
+            color: $gray;
+        }
+    }
+}
+
+//查看已屏蔽异常对话框
+.ignoreModal-modal-dialog {
+    width: 800px;
+    //已屏蔽异常展示部分
+    .ignore-th-index {
+        width: 7%;
+    }
+    .ignore-th-type {
+        width: 10%;
+    }
+    .ignore-th-source {
+        width: 18%;
+    }
+    .ignore-th-target {
+        width: 18%;
+    }
+    .ignore-th-desc {
+        width: 38%;
+    }
+    .ignore-th-btn {
+        width: 9%;
+    }
+
+    .ignore-td-desc {
+        text-align: left;
+    }
+}

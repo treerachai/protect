@@ -1,0 +1,68 @@
+@import '../../css/const';
+@import '../../css/mixin';
+
+.operate{
+	&>button{
+		@extend %normalBtn;
+	}
+}
+
+@mixin dot($color:$cSuccess){
+	color: $color;
+	.dot{
+		display: inline-block;
+	    width: 10px;
+	    height: 10px;
+	    background: $color;
+	    border-radius: 50% !important;
+	}
+}
+@mixin hover($color){
+	a{
+		color: $white;
+		background: $color !important;
+
+		.pm-option{
+			color: $white;
+		}
+	}
+	.dot{
+		background: $white;
+	} 
+}
+.bs-select.alarmLevel{
+	width: 100px !important;
+
+	.pm-option.closed{
+		@include dot($fcGray);
+	}
+	.pm-option.one{
+		@include dot($cSuccess);
+	}
+	.pm-option.two{
+		@include dot($cWarning);
+	}
+	.pm-option.three{
+		@include dot($cError);
+	}
+
+	.dropdown-menu{
+		li[data-original-index="0"]:hover{
+			@include hover($fcGray);
+		}
+		li[data-original-index="1"]:hover{
+			@include hover($cSuccess);
+		}
+		li[data-original-index="2"]:hover{
+			@include hover($cWarning);
+		}
+		li[data-original-index="3"]:hover{
+			@include hover($cError);
+		}
+	}
+
+	&.disabled .dropdown-toggle{
+		background: #ddd;
+	}
+
+}

@@ -1,0 +1,41 @@
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+.form-horizontal {
+  width: 600px;
+  margin: 0 auto; }
+
+input.error {
+  color: #333; }
+
+.no-dhcp-wrapper.disabled {
+  color: #bbb; }
+
+.op-btns .edit-ok {
+  display: none; }
+
+.op-btns .edit-cancel {
+  display: none; }
+
+.op-btns .edit-cancel:hover {
+  cursor: pointer; }
+
+.op-btns .u-btn {
+  margin: 0 5px;
+  padding: 3px 8px; }
+
+.op-btns .u-btn:hover {
+  cursor: pointer; }
+
+.operate-wrap {
+  text-align: center; }
+  .operate-wrap .reset,
+  .operate-wrap .reboot {
+    width: 210px;
+    height: 150px;
+    border-radius: 20px !important;
+    font-size: 30px; }

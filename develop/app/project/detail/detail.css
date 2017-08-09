@@ -1,0 +1,109 @@
+/*共用样式*/
+
+/*字体样式*/
+.text-right{ text-align: right; }
+.text-left{ text-align: left; }
+.text-center{ text-align: center; }
+
+.fs-one{ font-size: 20px; }
+.fs-two{ font-size: 18px; }
+.fs-three{ font-size: 16px; }
+.fs-four{ font-size: 14px; }
+.fs-five{ font-size: 12px; }
+
+/*位置样式*/
+.relative{ position: relative; }
+
+
+.logo{ float: left;color: #fff;margin:0;padding:0; }
+
+/*导航区域*/
+.nav-bar{ position: fixed; }
+
+.bar{ position: relative; width: 100%; height: 20px; margin-bottom: 2px; line-height: 20px; }
+.bar .service{ float: left; width: 30%; padding: 0 1%; overflow: hidden;
+    text-overflow: ellipsis; white-space: nowrap; }
+.bar .bg{ position: relative; float: left; width: 70%; height: 100%; color: #fff; }
+.bar .bg .real{ position: absolute; left: 0; min-width: 5px; background: black; height: 100%; }
+.bar .bg .real .text{ position: absolute; left: 0; }
+
+.bar.right .service{ float: right; height: 100%; }
+.bar.right .bg{ float: right; padding-right: 2px; text-align: right; }
+.bar.right .bg .real{ right: 0; left: auto;  background: black; }
+.bar.right .bg .real .text{ left: auto; right: 0; }
+
+.clear:after{ content: ' '; display: block; height: 0; width: 0; clear: both; opacity: 0; }
+
+
+/*过滤列表区域*/
+.filter .filter-line{ margin: 10px 0; }
+.filter .key{ float: left; width: 80px; }
+.filter .filter-list{ color: #005aa0; }
+.filter .filter-list>li{ width: 80px; cursor: pointer; }
+.filter .filter-list>li.active{ color: #f00; }
+.filter .filter-list>li:hover{ color: #f00; }
+
+.btn-search:active{ background: #3598dc; }
+
+/*统计结果数目区域*/
+.sort{ margin: 5px 0; padding: 4px; background: #F1F1F1; }
+.sort .btn.active{ background-color: #e4393c; color: #fff; }
+.result{ border-top:1px solid #ddd; }
+.result .result-sum{ display: inline-block; vertical-align: bottom; margin: 5px 0 5px 20px; color: #999; }
+
+/*设备列表区域*/
+.device-list-wrap{ overflow-x: hidden; overflow-y: auto; height: 600px; text-align: center; }
+.device-list{ position: relative; margin: 0 auto; overflow: hidden; text-align: left; }
+.device-list .each-device{ position: absolute; width: 280px; overflow: hidden; border: 1px solid #999; padding: 10px; }
+
+.device-list .ip-wrap .ip,
+.device-list .ip-wrap .os,
+.device-list .ip-wrap .net{ float: left; }
+
+.device-list .ip-wrap .ip{ margin-right: 10px; }
+
+.device-list .device-info{ margin: 5px 0; color: #888; }
+.device-list .port-info>li{ margin: 5px 0; padding: 2px; background: #ccc; }
+
+.port-info{ line-height: 20px; }
+.port-info .vul-list{ color: #e4393c; }
+
+.no-data{ display: none; position: absolute; left: 0; bottom: 40px; width: 100%; text-align: center; }
+.no-data.appear{ display: block; animation: show 2.5s; }
+
+/*翻页控制按钮*/
+.pageCtrl{ margin-top: 20px; }
+.pageCtrl button{ margin: 0 5px; cursor: pointer; }
+.pageCtrl button.no{ background: #ddd; cursor: not-allowed; }
+
+/*图表统计区域*/
+.statistics{ border: 1px solid; padding: 6px; }
+.unit{ margin-bottom: 10px; }
+.unit .name{ border-bottom: 1px dashed #aaa; margin-bottom: 6px; padding-bottom: 4px; }
+.unit .content{ background: #ccc; }
+.unit .more{ float: right; font-size: 14px; line-height: 20px; }
+
+
+/*任务列表分页区*/
+#task-list .progress{ margin-bottom: 0; }
+#task-list .modal-footer{ padding: 0; text-align: center; }
+#task-list .active td{ background: #ddd; }
+.list.table tr:hover td{ background: #ddd }
+.list.table .success td{ background: #fff; }
+
+@keyframes show{
+	0%{
+		opacity: 0;
+	}
+	40%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+/*媒体查询*/
+@media (max-width: 991px){
+	.nav-bar{ position: static; }
+}

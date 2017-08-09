@@ -1,0 +1,26 @@
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+.portlet .u-btn, .operate > button {
+  padding: 0 10px;
+  font-size: 14px; }
+
+input.error {
+  color: #333; }
+
+.operate > button {
+  margin-right: 10px; }
+
+.operate > button:last-child {
+  margin-right: 0; }

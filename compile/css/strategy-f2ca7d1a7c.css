@@ -1,0 +1,82 @@
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+.operate > button {
+  padding: 0 10px;
+  font-size: 14px; }
+
+.bs-select.alarmLevel {
+  width: 100px !important; }
+  .bs-select.alarmLevel .pm-option.closed {
+    color: #666; }
+    .bs-select.alarmLevel .pm-option.closed .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #666;
+      border-radius: 50% !important; }
+  .bs-select.alarmLevel .pm-option.one {
+    color: #090; }
+    .bs-select.alarmLevel .pm-option.one .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #090;
+      border-radius: 50% !important; }
+  .bs-select.alarmLevel .pm-option.two {
+    color: #ff9900; }
+    .bs-select.alarmLevel .pm-option.two .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #ff9900;
+      border-radius: 50% !important; }
+  .bs-select.alarmLevel .pm-option.three {
+    color: #ff0000; }
+    .bs-select.alarmLevel .pm-option.three .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #ff0000;
+      border-radius: 50% !important; }
+  .bs-select.alarmLevel .dropdown-menu li[data-original-index="0"]:hover a {
+    color: #fff;
+    background: #666 !important; }
+    .bs-select.alarmLevel .dropdown-menu li[data-original-index="0"]:hover a .pm-option {
+      color: #fff; }
+  .bs-select.alarmLevel .dropdown-menu li[data-original-index="0"]:hover .dot {
+    background: #fff; }
+  .bs-select.alarmLevel .dropdown-menu li[data-original-index="1"]:hover a {
+    color: #fff;
+    background: #090 !important; }
+    .bs-select.alarmLevel .dropdown-menu li[data-original-index="1"]:hover a .pm-option {
+      color: #fff; }
+  .bs-select.alarmLevel .dropdown-menu li[data-original-index="1"]:hover .dot {
+    background: #fff; }
+  .bs-select.alarmLevel .dropdown-menu li[data-original-index="2"]:hover a {
+    color: #fff;
+    background: #ff9900 !important; }
+    .bs-select.alarmLevel .dropdown-menu li[data-original-index="2"]:hover a .pm-option {
+      color: #fff; }
+  .bs-select.alarmLevel .dropdown-menu li[data-original-index="2"]:hover .dot {
+    background: #fff; }
+  .bs-select.alarmLevel .dropdown-menu li[data-original-index="3"]:hover a {
+    color: #fff;
+    background: #ff0000 !important; }
+    .bs-select.alarmLevel .dropdown-menu li[data-original-index="3"]:hover a .pm-option {
+      color: #fff; }
+  .bs-select.alarmLevel .dropdown-menu li[data-original-index="3"]:hover .dot {
+    background: #fff; }
+  .bs-select.alarmLevel.disabled .dropdown-toggle {
+    background: #ddd; }

@@ -1,0 +1,83 @@
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+.portlet .u-btn, .button-wrapper > button {
+  padding: 0 10px;
+  font-size: 14px; }
+
+input.error {
+  color: #333; }
+
+.button-wrapper {
+  min-width: 150px; }
+  .button-wrapper > button {
+    margin-right: 10px; }
+  .button-wrapper > button:last-child {
+    margin-right: 0; }
+
+.config-item {
+  margin-right: 10px; }
+  .config-item:last-child {
+    margin-right: 0; }
+  .config-item.pu-warning {
+    padding: 0 5px;
+    background: #ff9900;
+    color: #fff; }
+  .config-item.pu-error {
+    padding: 0 5px;
+    background: #ff0000;
+    color: #fff; }
+
+.table thead th:nth-child(6) {
+  min-width: 180px; }
+
+.table tbody tr td:nth-child(7),
+.table tbody tr td:nth-child(8) {
+  text-align: right; }
+
+.pm-id {
+  cursor: pointer; }
+  .pm-id .pm-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 28px;
+    left: 0;
+    text-align: left;
+    border: 1px solid #3399ff;
+    border-radius: 5px !important; }
+  .pm-id:hover {
+    position: relative; }
+    .pm-id:hover .pm-content {
+      display: block;
+      padding: 5px 10px;
+      background-color: #e7ecf1;
+      animation: fadeIn 0.4s; }
+      .pm-id:hover .pm-content:before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 10px solid #3399ff;
+        border-top: none;
+        border-left-color: transparent;
+        border-right-color: transparent; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

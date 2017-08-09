@@ -1,0 +1,111 @@
+@import './const';
+/*基本样式*/
+
+/*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html, body{ height: 100%; min-width: 1300px; overflow: auto; font-family:"Microsoft YaHei"; }
+h1, h2, h3, h4, h5, h6{
+	font-family:"Microsoft YaHei";
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table { border-collapse: collapse; border-spacing: 0; }
+table th,
+table td{ vertical-align: middle !important; text-align: center; word-break: break-all; }
+//表格奇偶行不同色
+table tbody tr:nth-child(2n+1){
+	background: $cbTableActive;
+
+	//对于合并单元格的td，不做隔行换色
+	td[rowspan]{ background-color: $white; }
+}
+
+em    { font-style: normal; }
+
+input { border: 1px solid #c2cad8; }
+input[disabled],
+select[disabled]{
+	opacity: .6;
+	cursor: not-allowed;
+}
+
+/*字体图标*/
+ @font-face {
+  font-family: 'iconfont';   
+  src: url('iconFont/font.eot');
+  src: url('iconFont/font.eot?#iefix') format('embedded-opentype'),
+	   url('iconFont/font.woff') format('woff'),
+	   url('iconFont/font.ttf') format('truetype'),
+	   url('iconFont/font.svg#iconfont') format('svg');
+} /*
+ @font-face {
+  font-family: 'iconfont'; 
+  src: url('//at.alicdn.com/t/font_ozdsbquuauyjh5mi.eot');
+  src: url('//at.alicdn.com/t/font_ozdsbquuauyjh5mi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_ozdsbquuauyjh5mi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_ozdsbquuauyjh5mi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_ozdsbquuauyjh5mi.svg#iconfont') format('svg');
+}*/
+.iconfont{
+   font-family: "iconfont" !important;
+   font-style:normal;
+   -webkit-font-smoothing: antialiased;
+   -webkit-text-stroke-width: 0.2px;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*字体样式*/
+.text-right{ text-align: right; }
+.text-left { text-align: left; }
+.text-center,
+.center    { text-align: center; }
+.bold      { font-weight: bold; }
+
+/*位置样式*/
+.relative{ position: relative; }
+.absolute{ position: absolute; }
+.fixed   { position: fixed; }
+
+/*浮动相关*/
+.float,
+.float-left { float: left; }
+.float-right{ float: right; }
+.clear:after{ content:"."; display:block; height:0; visibility:hidden; clear:both; }
+
+/*间隔样式*/
+.no-padding{ padding: 0; }
+
+

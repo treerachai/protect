@@ -1,0 +1,22 @@
+@import '../../css/const';
+@import '../../css/mixin';
+
+input.error{
+	color: $fcMain;
+}
+
+.portlet .u-btn{
+	@extend %normalBtn;
+}
+
+.operate{
+	&>button{
+		margin-right: $spNormal;
+		@extend %normalBtn;
+	}
+	&>button:last-child{
+		margin-right: 0;
+	}
+}
+
+.default-ip{}

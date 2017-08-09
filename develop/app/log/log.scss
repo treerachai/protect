@@ -1,0 +1,38 @@
+@import '../../css/const';
+@import '../../css/mixin';
+
+//过滤部分
+.filt-wrapper .item{
+	margin-bottom: $spMiddle;
+}
+
+.input-filt{
+	li.sub-item{
+		float: left;
+		margin-right: $spMiddle;
+	}
+}
+
+.check-filt{
+	label{
+		margin-right: $spMiddle;
+	}
+	input{
+		vertical-align: -2px;
+	}
+}
+
+.operate{
+	margin-bottom: $spNormal;
+	.u-btn, .u-btn_success{
+		@extend %normalBtn;
+	}
+}
+
+.table{
+	tbody tr{
+		td:nth-child(6) {
+            text-align: left;
+        }
+	}
+}

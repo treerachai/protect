@@ -1,0 +1,36 @@
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+.operate .u-btn, .operate .u-btn_success {
+  padding: 0 10px;
+  font-size: 14px; }
+
+.filt-wrapper .item {
+  margin-bottom: 15px; }
+
+.input-filt li.sub-item {
+  float: left;
+  margin-right: 15px; }
+
+.check-filt label {
+  margin-right: 15px; }
+
+.check-filt input {
+  vertical-align: -2px; }
+
+.operate {
+  margin-bottom: 10px; }
+
+.table tbody tr td:nth-child(6) {
+  text-align: left; }

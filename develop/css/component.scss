@@ -1,0 +1,138 @@
+@import './const';
+@import './ui';
+/*
+ * 各种组件
+*/
+
+//弹窗
+@mixin pop-style( $color: $cMain ){
+	$btnGray: #999;
+	
+	.modal-content{
+		border: 1px solid $color;
+	}
+    .pop-header{
+		background-color: $color;
+	}
+	.pop-body{
+		color: $color;
+	}
+	.pop-footer{
+		button{
+			color: $color;
+			border-color: $color;
+			&:hover{
+				color: $white;
+				background-color: $color;
+				border-color: $color;
+			}
+		}
+		button.cancel{
+			color: $btnGray;
+			border-color: $btnGray;
+			&:hover{
+				color: $white;
+				background-color: $btnGray;
+				border-color: $btnGray;
+			}
+		}
+	}
+}
+.pop{
+	.modal-dialog{
+		position: absolute;
+	    top: 40%;
+	    left: 50%;
+		width: 30%;
+		max-width: 400px;
+		text-align: center;
+		.modal-content{
+			transform: translate( -50%, -50% );
+		}
+	}
+	.pop-header{
+		padding: $spSmall;
+		.pop-title{
+			color: $white;
+		}
+	}
+	.pop-body{
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    i{
+	    	font-size: $fsLarge;
+	    }
+		.pop-text{
+			display: inline-block;
+			margin-left: $spNormal;
+		    max-width: 80%;
+		    text-align: left;
+		    word-wrap: break-word;
+		    word-break: break-all;
+		}
+	}
+	.pop-footer{
+		text-align: center;
+		border-top: none;
+		button{
+			padding: 2px 15px;
+			background-color: $white;
+			border-radius: $spSmall !important;
+		}
+	}
+	&.pop-normal{
+		@include pop-style( $cNormal );
+	}
+	&.pop-sure{
+		@include pop-style( $cNormal );
+	}
+	&.pop-success{
+		@include pop-style( $cSuccess );
+	}
+	&.pop-warning{
+		@include pop-style( $cWarning );
+	}
+	&.pop-error{
+		@include pop-style( $cError );
+	}
+}
+
+//终端连接状态和服务器时间展示
+@mixin state( $color: $cSuccess ) {
+	.dot{
+	    display: inline-block;
+	    width: 14px;
+	    height: 14px;
+	    margin-right: 5px;
+	    vertical-align: -2px;
+	    border-radius: 15px !important;
+    	background: $color;
+	}
+	.des{
+		margin-right: 10px;
+	}
+}
+.m-state{
+	.des,
+	.detail,
+	.time{
+		display: inline-block;
+	}
+	.des{
+		width: 100px;
+	}
+	.time{
+		width: 190px;
+	}
+  	&.success{
+  		@include state( $cSuccess );
+  	}
+  	&.warning{
+  		@include state( $cWarning );
+  	}
+  	&.error{
+  		@include state( $cError );
+  	}
+}
+

@@ -1,0 +1,83 @@
+@import 'const';
+//自定义按钮
+@mixin btn( $color ){
+	padding: 3px $spNormal;
+	border-radius: 3px !important;
+	border: 1px solid $color;
+	color: $color;
+	background-color: $white;
+	&:hover{
+		color: $white;
+		background-color: $color;
+	}
+	&:active, &:focus{
+		outline: none;
+	}
+
+}
+
+.u-btn{
+	@include btn( $cNormal );
+}
+.u-btn_cancel{
+	@include btn( #999 );
+}
+.u-btn_warning{
+	@include btn( $cWarning );
+}
+.u-btn_error{
+	@include btn( $cError );
+}
+.u-btn_success{
+	@include btn( $cSuccess );
+}
+
+.u-btn.u-radius,
+.u-btn_cancel.u-radius,
+.u-btn_warning.u-radius,
+.u-btn_error.u-radius,
+.u-btn_success.u-radius{
+	border-radius: $spMiddle !important;
+}
+
+.u-btn[disabled],
+.u-btn_cancel[disabled],
+.u-btn_warning[disabled],
+.u-btn_error[disabled],
+.u-btn_success[disabled]{
+	background-color: #bbb;
+	border-color: #bbb;
+	color: $white;
+	cursor: not-allowed;
+	&:hover{
+		background-color: #bbb;
+		border-color: #bbb;
+		color: $white;
+	}
+}
+
+//注释信息
+.u-info{
+	color: $fcLiaghtGray;
+}
+
+/*提示色*/
+.u-error  { color: $cError; }
+.u-warning{ color: $cWarning; }
+.u-success { color: $cSuccess; }
+.u-normal { color: $cNormal; }
+.u-na     { color: $na; } //not avaliable
+
+/*空表格行*/
+.u-empty_tr{
+	color: transparent;
+}
+
+//文字对齐
+.text-r{ text-align: right; }
+.text-c{ text-align: center; }
+.text-l{ text-align: left;}
+
+/*表格字体图标样式*/ 
+.hideFlag{ display: none; }
+.showFlag{ color: $fcLiaghtGray; display: inline-block; position: absolute; bottom: 0; right: $spSmall; font-size: $fsSmall; }

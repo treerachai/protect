@@ -1,0 +1,55 @@
+@import '../../css/const';
+
+/*变量*/
+$inputHeight: 50px;
+$inputShadowColor: #16599f;
+
+/**/
+
+html,body{ background-color: $cMain !important; font-weight: bold; }
+
+body{ display: -webkit-flex; display: flex; align-items: center; justify-content: center; }
+
+
+.page-lock{ width: 500px; margin: 0; }
+.page-lock .page-body{ margin-top: 0; background: $cMain; }
+.lock-head{ font-size: 24px; color: $white; font-weight: bold; background-color: $cMain; }
+.lock-body{ margin: 0; padding: 5% 14%; border-radius: $spNormal !important;
+	background: $white;
+
+	.errorMsg{ position: absolute; width: 100%; top: -15px; color: $cError; }
+}
+
+//logo
+.logo{ 
+	height: 120px; padding-left: 8px; font-size: 32px; color: #2583cb; background: #fff;
+	img{ float: left; width: 80px; height: 80px; margin-top: 15px; vertical-align: middle; }
+	
+	.title{
+		float: left; margin-top: 5px;
+		.big{ font-size: 35px; }
+		.small{ font-size: 20px; }
+	}
+}
+
+//表单
+.lock-form{ 
+	width: 100%; padding-left: 0;
+	//content
+	.form-group .form-control{ width: 100%; height: 50px; margin-bottom: $spSmall; padding-left: $inputHeight; background-color: $cMain; border-radius: $spNormal !important; box-shadow: 3px 3px 4px 0px $inputShadowColor !important; color: #ccc; font-size: 16px;
+
+		&:focus{ background-color: $cMain; }
+	}
+	.username,
+	.password{
+		background-size: auto $inputHeight - 20px; background-position: 10px 10px; background-repeat: no-repeat;
+	}
+	.username{ background-image: url("../img/user.png"); }
+	.password{ background-image: url("../img/password.png"); }
+	.form-actions
+	.submit{ width: 50%; padding: 10px 0; background-color: $cMain; border: none; border-radius: 25px !important; box-shadow: 3px 3px 4px 0px $inputShadowColor !important; font-size: 18px; color: $white; font-weight: bold;
+
+		&:active{ outline: none; background-color: darken($cMain,5%); }
+		&:focus{ outline: none; background-color: darken($cMain,5%); }
+	}
+}

@@ -1,0 +1,88 @@
+@import '../../css/const';
+@import '../../css/mixin';
+
+input.error{
+	color: $fcMain;
+}
+
+.portlet .u-btn{
+	@extend %normalBtn;
+}
+
+.operate{
+	&>button{
+		margin-right: $spNormal;
+		@extend %normalBtn;
+	}
+	&>button:last-child{
+		margin-right: 0;
+	}
+}
+
+.ip-wrapper{
+	.ip-list{
+		display: inline-block;
+		max-width: 500px;
+		margin-right: $spNormal;
+		vertical-align: top;
+		text-align: left;
+	}
+	&.ps-close{
+		.ip-list{
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+	}
+	&.ps-open{
+	    
+	    //display: inline-block;
+
+	    .ip-link{ margin-left: $spNormal; }
+	}
+}
+
+.table{
+	table-layout: fixed;
+
+	thead tr th:nth-child(5) {
+		width: 50%;
+	}
+
+    tbody tr{ 
+        td:nth-child(5) { 
+            text-align: left;
+        }
+    }
+
+    .dot-wrap{
+        position: relative;
+        text-align: left;
+
+        .dot{
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+        .dot.ellipsis{
+            padding-right: 40px;
+            word-wrap: initial;
+            word-break: initial;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .more{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .less{
+            margin-left: 5px;
+        }
+    }
+
+    .ip{
+    	margin-right: $spNormal;
+    	color: $fcMain;
+    }
+}

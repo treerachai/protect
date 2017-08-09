@@ -1,0 +1,27 @@
+@import '../../css/const';
+
+//立即检查
+.check-wrapper .m-check{
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.m-check{
+	.content{
+		color: $fcGray;
+	}
+	em{
+		color: $cMain;
+	}
+	em.date{
+		color: $cError;
+	}
+}
+
+.table{
+    tbody tr{ 
+        td:nth-child(2) {
+            padding: 0 15px;
+        }
+    }
+}

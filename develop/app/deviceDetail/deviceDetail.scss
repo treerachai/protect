@@ -1,0 +1,57 @@
+@import '../../css/const';
+@import '../../css/mixin';
+
+.ip-title{
+    padding-bottom: $spNormal;
+    font-size: 20px;
+}
+
+.item{
+    display: inline-block;
+    width: 200px;
+    margin: 5px 0;
+}
+
+.net-wrap{
+    display: inline-block;
+    vertical-align: bottom;
+    li{
+        float: left;
+        margin-right: $spLarge;
+    }
+}
+
+.abnormal-wrap{
+    margin: 5px 0;
+    .abnormal-content{
+        padding: 0 60px;
+    }
+}
+
+.table{
+    thead tr{
+        th:nth-child(1) {
+            min-width: 80px;
+        }
+        th:nth-child(2) {
+            min-width: 160px;
+        }
+        th:nth-child(3) {
+            min-width: 80px;
+        }
+        th:nth-child(4) {
+            min-width: 135px;
+        }
+        th:nth-child(5) {
+            min-width: 135px;
+        }
+        th:nth-child(7) {
+            min-width: 130px;
+        }
+    }
+    tbody tr{
+        td:nth-child(6) {
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import '../../css/const';
+@import '../../css/mixin';
+
+//列表中的checkbox
+input[type="checkbox"] {
+	vertical-align: top;
+}
+
+.portlet .tools>button{
+	@extend %normalBtn;
+}
+
+.operate{
+	&>button{
+		margin-right: $spNormal;
+		@extend %normalBtn;
+	}
+	&>button:last-child{
+		margin-right: 0;
+	}
+}
+
+//通信审计范围样式
+.exchange{
+	display: inline-block;
+	text-align: center;
+}
+
+table{
+	tbody{
+		td label{
+		margin-right: $spNormal;
+		}
+		td label:last-child{
+			margin-right: 0;
+		}
+	}
+	
+}

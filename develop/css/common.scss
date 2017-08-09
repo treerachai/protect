@@ -1,0 +1,275 @@
+@import './const';
+@import './base';
+
+/*
+ *各页面公用样式
+*/
+
+//背景区域
+body{ background-color: $cMain; }
+
+/*头部*/
+.page-header.navbar{
+	position: relative;
+	height: 60px !important;
+	min-height: 60px;
+	color: $white; box-shadow: none;
+
+	.page-top{ height: 60px; background-color: $cSecond; }
+	.content{ box-shadow: 0 1px 10px 0 rgba(50,50,50,.2); }
+	.top-menu{
+		height: 60px;
+		.navbar-nav{
+			height: 100%;
+			margin-right: 20px;
+			a{ color: $white; }
+			a:hover{ background-color: $cSecond; }
+		}
+		.user{ padding-top: 20px; }
+		.sign-out{
+			padding: 20px 0 0 15px;
+			a{ padding: 0; }
+		}
+		.notice-wrap{
+			float: left;
+			margin-right: 30px;
+			height: 20px;
+			overflow: hidden;
+			color: $cWarning;
+		}
+		.notice-wrap:hover .notice-par{
+			animation-play-state: paused;
+		}
+		.notice-par{
+			animation: circle 2s linear;
+			animation-iteration-count: infinite;
+		}
+		@at-root{
+			@keyframes circle{
+				0%{
+					transform: translateY(20px);
+				}
+				100%{
+					transform: translateY(-100%);
+				}
+			}
+		}
+	}
+	.logo{
+		display: inline-block; height: 60px; padding-left: 30px;
+		img{ display: inline-block; width: 40px; height: 40px; margin-top: 10px; margin-right: 10px; }
+		.title{ display: inline-block; font-weight: bold; font-size: 26px; vertical-align: top; }
+		.sub-title{ display: inline-block; margin-top: 23px; font-size: 16px; vertical-align: top; }
+	}
+}
+
+#stateAndTime{
+	display: inline-block;
+  	margin: 22px 30px 0 0;
+}
+
+//内容区域
+.page-header-fixed .page-container{
+	margin-top: 0;
+}
+
+.page-content-wrapper{
+	background: $cbBody;
+	.page-content{
+		margin-left: 195px !important;
+	    margin-top: 0 !important;
+	    padding: 20px 20px 10px !important;
+	    background: #ebebeb;
+	}
+}
+
+
+//侧边框
+.page-sidebar-wrapper .page-sidebar{
+	width: 195px;
+    float: left;
+    position: relative;
+    margin: 0 !important;
+    margin-right: -100% !important;
+	background-color: $cMain;
+}
+.page-sidebar-menu li.nav-item{
+	border-bottom: 1px solid #66ccff;
+	.iconfont{
+		color: $white;
+	}
+	.title{
+		margin-top: 0 !important;
+		padding: 0;
+		font-size: 14px;
+	}
+	a{
+		color: $white !important;
+	}
+	&.active a{
+		background-color: $cFirst !important;
+		.iconfont{
+			color: $white !important;
+		}
+	}
+	&:hover{
+		a{
+			background-color: $cFirst;
+			.iconfont{
+				color: $white !important;
+			}
+		}
+	}
+	.sub-menu{
+			background-color: $cMain !important;
+			margin-top: -86px !important;
+			a{
+				background-color: $cMain !important;
+				.iconfont{
+					margin-right: $spNormal;
+				}
+			}
+			li.active a{
+				background-color: $cFirst !important;
+			}
+			li:hover{
+				a{
+					background-color: $cMain !important;
+					&:hover{
+						background-color: $cFirst !important;
+					}
+				}
+			}
+		}
+
+}
+
+//处理屏幕缩小侧边栏收缩的问题
+@media (min-width: 1px){
+	.page-sidebar .page-sidebar-menu.page-sidebar-menu-hover-submenu li .sub-menu {
+	    display: none;
+	    width: 194px;
+	    z-index: 2000;
+	    position: absolute;
+	    -webkit-border-radius: 4px;
+	    -moz-border-radius: 4px;
+	    -ms-border-radius: 4px;
+	    -o-border-radius: 4px;
+	    border-radius: 4px;
+	    margin-left: 195px;
+	    margin-top: -78px;
+	}
+}
+
+//页面底部
+.page-footer .page-footer-inner{ color: #fff; }
+
+//bootstrap分页
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+	background-color: $cMain;
+	border-color: $cMain;
+}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover{
+	color: $cMain;
+}
+.pagination>li>a{
+	color: $cMain;
+}
+.loading{
+	display: none; position: absolute; left: 0; top: 40%; width: 100%; text-align: center; font-size: 30px;
+	img{ width: 50px; }
+}
+.modal-mask-byself{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.1;
+  z-index: 2;		
+}
+.page-mask{ display: none; position: absolute; z-index: 4; width: 100%; height: 100%; top: 0; left: 0;
+	background: #fff; opacity: 0.5; cursor: not-allowed; }
+.jump input {
+    position: relative;
+    float: left;
+    line-height: 1.42857;
+    text-decoration: none;
+    color: #337ab7;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: -1px;
+    max-width: 68px;
+    height: 33px;
+    text-align: center;
+    outline: none;
+}
+.jump > li > span:hover {
+    background-color: #fff;
+}
+.jump form {
+	display: inline;
+}
+.jump form span, .jump form button {
+	position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857;
+    text-decoration: none;
+    color: #337ab7;
+    background-color: #fff;
+    border: 1px solid #ddd;
+	margin-left: -1px;
+	outline: none;
+}
+//暂无数据
+.no-data{
+	padding: 20px 0; text-align: center;
+
+	i{ font-size: $fsLarge; color: $cMain; }
+
+	.content{ display: inline-block; margin-left: 10px; font-size: $fsH5; color: #888; vertical-align: 5px; }
+}
+
+.portlet .portlet-title{
+	border-bottom: 1px solid #ddd;
+	.tools{
+		font-size: $fsH5;
+		color: $fcLiaghtGray;
+	}
+}
+
+//表单验证错误提示
+label.error{
+	color: $cError;
+}
+
+//模态框按钮大小
+.modal{
+	.modal-content{
+		border: 1px solid $cMain;
+		.modal-header{
+			color: $white;
+			background-color: $cMain;
+		}
+	}
+}
+
+//标题
+.title{
+	font-size: $fsH1;
+	padding: $spNormal 0;
+}
+//子标题
+.sub-title{
+	padding-bottom: $spNormal;
+	font-size: $fsH3;
+}
+
+//表单
+.form-horizontal .control-label{
+	text-align: right;
+    margin-bottom: 0;
+    padding-top: 7px;
+}
+
+

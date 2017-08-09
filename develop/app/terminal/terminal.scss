@@ -1,0 +1,107 @@
+@import '../../css/const';
+@import '../../css/mixin';
+
+input.error{
+	color: $fcMain;
+}
+
+.portlet .u-btn{
+	@extend %normalBtn;
+}
+
+.button-wrapper{
+	min-width: 150px;
+
+	&>button{
+		margin-right: $spNormal;
+		@extend %normalBtn;
+	}
+	&>button:last-child{
+		margin-right: 0;
+	}
+}
+
+
+@mixin state( $color ){
+	padding: 0 $spSmall;
+	background: $color;
+	color: $white;
+}
+.config-item{
+	margin-right: $spNormal;
+	&:last-child{
+		margin-right: 0;
+	}
+	&.pu-warning{
+		@include state($cWarning);
+	}
+	&.pu-error{
+		@include state($cError);
+	}
+}
+
+//流量、包量数字右对齐
+.table{
+	thead{
+		th:nth-child(6){
+			min-width: 180px;
+		}
+	}
+	tbody tr{
+		td:nth-child(7),
+		td:nth-child(8) {
+			text-align: right;
+		}
+	}
+}
+
+//鼠标滑过时显示设备描述信息
+.pm-id{
+	cursor: pointer;
+
+	.pm-content{
+		display: none;
+		position: absolute;
+		width: 100%;
+		top: 28px;
+		left: 0;
+		text-align: left;
+		border: 1px solid #3399ff;
+		border-radius: $spSmall !important;
+	}
+
+	&:hover{
+		position: relative;
+
+		.pm-content{
+			display: block;
+			padding: $spSmall $spNormal;
+			background-color: #e7ecf1;
+			animation: fadeIn 0.4s;
+
+			&:before{
+				content: '';
+				position: absolute;
+				top: -10px;
+	    		left: 50%;
+				width: 0;
+				height: 0;
+				border: 10px solid #3399ff;
+	    		border-top: none;
+	   		 	border-left-color: transparent;
+	    		border-right-color: transparent;
+			}
+		}
+	}
+
+	@at-root {
+		@keyframes fadeIn{
+			0%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"name": "项目1",
+	"des": "我是第一个项目，哈哈，哈哈",
+	"state": "running",
+	"progress": "40%",
+	"nextRun": "1468826170107",
+	"index": "1",
+	"result": {
+		"properties": "80",
+		"vuls": "100"
+	}
+}

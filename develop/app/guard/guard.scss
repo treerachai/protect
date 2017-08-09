@@ -1,0 +1,14 @@
+@import '../../css/const';
+
+input.error{
+	color: $fcMain;
+}
+
+.operate{
+	&>button{
+		margin-right: $spNormal;
+	}
+	&>button:last-child{
+		margin-right: 0;
+	}
+}

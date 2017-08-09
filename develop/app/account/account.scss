@@ -1,0 +1,10 @@
+@import '../../css/const';
+
+form{
+	width: 410px;
+	margin: 0 auto;
+	text-align: right;
+}
+input.error{
+	color: $fcMain;
+}

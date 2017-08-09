@@ -1,0 +1,70 @@
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+.portlet .u-btn, .operate > button {
+  padding: 0 10px;
+  font-size: 14px; }
+
+input.error {
+  color: #333; }
+
+.operate > button {
+  margin-right: 10px; }
+
+.operate > button:last-child {
+  margin-right: 0; }
+
+.ip-wrapper .ip-list {
+  display: inline-block;
+  max-width: 500px;
+  margin-right: 10px;
+  vertical-align: top;
+  text-align: left; }
+
+.ip-wrapper.ps-close .ip-list {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.ip-wrapper.ps-open .ip-link {
+  margin-left: 10px; }
+
+.table {
+  table-layout: fixed; }
+  .table thead tr th:nth-child(5) {
+    width: 50%; }
+  .table tbody tr td:nth-child(5) {
+    text-align: left; }
+  .table .dot-wrap {
+    position: relative;
+    text-align: left; }
+    .table .dot-wrap .dot {
+      word-wrap: break-word;
+      word-break: break-all; }
+    .table .dot-wrap .dot.ellipsis {
+      padding-right: 40px;
+      word-wrap: initial;
+      word-break: initial;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .table .dot-wrap .more {
+      position: absolute;
+      top: 0;
+      right: 0; }
+    .table .dot-wrap .less {
+      margin-left: 5px; }
+  .table .ip {
+    margin-right: 10px;
+    color: #333; }

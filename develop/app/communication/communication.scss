@@ -1,0 +1,91 @@
+@import '../../css/const';
+@import '../../css/mixin';
+
+//过滤部分
+.filt-wrapper .item{
+	margin-bottom: $spMiddle;
+}
+
+.input-filt{
+	li.sub-item{
+		float: left;
+		margin-right: $spMiddle;
+	}
+}
+
+.check-filt{
+	label{
+		margin-right: $spMiddle;
+	}
+	input{
+		vertical-align: -2px;
+	}
+}
+
+.operate{
+	margin-bottom: $spNormal;
+	.u-btn, .u-btn_success{
+		@extend %normalBtn;
+	}
+}
+
+//流量数字右对齐
+.table{
+    //table-layout: fixed;
+
+    thead{
+        th:nth-child(1) {
+            min-width: 80px;
+        }
+        th:nth-child(2) {
+            min-width: 160px;
+        }
+        th:nth-child(4) {
+            min-width: 135px;
+        }
+        th:nth-child(5) {
+            min-width: 135px;
+        }
+        th:nth-child(6){
+           width: 30%;
+        } 
+    }
+    tbody{
+        tr{ 
+            td:nth-child(6) {
+                width: 400px;
+                padding: 3px 20px;
+                text-align: left;
+            } 
+        }
+    }
+
+    .dot-wrap{
+        position: relative;
+        text-align: left;
+
+        .dot{
+            width: 400px;
+        }
+        .dot.ellipsis{
+            padding-right: 40px;
+            word-wrap: initial;
+            word-break: initial;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .more{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .less{
+            margin-left: 5px;
+        }
+    }
+    
+}
+
+
+ 

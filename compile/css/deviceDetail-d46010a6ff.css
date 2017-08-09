@@ -1,0 +1,55 @@
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+.ip-title {
+  padding-bottom: 10px;
+  font-size: 20px; }
+
+.item {
+  display: inline-block;
+  width: 200px;
+  margin: 5px 0; }
+
+.net-wrap {
+  display: inline-block;
+  vertical-align: bottom; }
+  .net-wrap li {
+    float: left;
+    margin-right: 20px; }
+
+.abnormal-wrap {
+  margin: 5px 0; }
+  .abnormal-wrap .abnormal-content {
+    padding: 0 60px; }
+
+.table thead tr th:nth-child(1) {
+  min-width: 80px; }
+
+.table thead tr th:nth-child(2) {
+  min-width: 160px; }
+
+.table thead tr th:nth-child(3) {
+  min-width: 80px; }
+
+.table thead tr th:nth-child(4) {
+  min-width: 135px; }
+
+.table thead tr th:nth-child(5) {
+  min-width: 135px; }
+
+.table thead tr th:nth-child(7) {
+  min-width: 130px; }
+
+.table tbody tr td:nth-child(6) {
+  text-align: left; }

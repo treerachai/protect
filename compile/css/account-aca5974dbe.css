@@ -1,0 +1,14 @@
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+form {
+  width: 410px;
+  margin: 0 auto;
+  text-align: right; }
+
+input.error {
+  color: #333; }

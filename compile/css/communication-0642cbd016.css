@@ -1,0 +1,72 @@
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+.operate .u-btn, .operate .u-btn_success {
+  padding: 0 10px;
+  font-size: 14px; }
+
+.filt-wrapper .item {
+  margin-bottom: 15px; }
+
+.input-filt li.sub-item {
+  float: left;
+  margin-right: 15px; }
+
+.check-filt label {
+  margin-right: 15px; }
+
+.check-filt input {
+  vertical-align: -2px; }
+
+.operate {
+  margin-bottom: 10px; }
+
+.table thead th:nth-child(1) {
+  min-width: 80px; }
+
+.table thead th:nth-child(2) {
+  min-width: 160px; }
+
+.table thead th:nth-child(4) {
+  min-width: 135px; }
+
+.table thead th:nth-child(5) {
+  min-width: 135px; }
+
+.table thead th:nth-child(6) {
+  width: 30%; }
+
+.table tbody tr td:nth-child(6) {
+  width: 400px;
+  padding: 3px 20px;
+  text-align: left; }
+
+.table .dot-wrap {
+  position: relative;
+  text-align: left; }
+  .table .dot-wrap .dot {
+    width: 400px; }
+  .table .dot-wrap .dot.ellipsis {
+    padding-right: 40px;
+    word-wrap: initial;
+    word-break: initial;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .table .dot-wrap .more {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .table .dot-wrap .less {
+    margin-left: 5px; }

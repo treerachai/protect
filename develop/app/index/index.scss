@@ -1,0 +1,188 @@
+@import '../../css/const';
+
+html,body{
+	min-height: 734px;
+	overflow: auto;
+}
+
+.content-wrap{
+	position: relative;
+	overflow: hidden;
+}
+
+.more-wrap{
+	float: right;
+	padding-top: 13px;
+}
+
+.s-title{
+	display: inline-block;
+	font-size: $fsMain;
+	font-weight: bold;
+}
+.s-device,
+.s-alarm{
+	display: inline-block;
+	padding-left: 35%;
+	color: $fcLiaghtGray;
+}
+.s-device .s-online,
+.s-alarm .s-all{
+	font-weight: bold;
+	padding-right: 10px;
+	font-size: 24px;
+}
+.s-device .s-online{
+	color: #00CC00;
+}
+.s-alarm .s-all{
+	color: $cError;
+}
+
+
+
+//威胁统计区域
+$typeWrapColor: #317c7d, #796d5e, #9b1e1f, #ffcc33, #de573e, #ff0000;
+.type-wrap{
+	float: left;
+	.type-item{
+		display: inline-block;
+		padding-right: $spNormal;
+		.type-color{
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+	
+			@for $i from 1 through length($typeWrapColor) {
+				&.type#{$i} {
+					background: nth($typeWrapColor, $i);
+				}
+			}
+		}
+	}
+}
+
+//图表区域
+.chart-wrap{
+	height: 100%;
+	padding-top: 20px;
+
+	.chart-par{
+		height: 50%;
+		padding: $spSmall;
+		.chart-content{
+			height: 100%;
+			padding: $spSmall;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	    }
+	    .no-data{
+	    	display: flex;
+	    	height: 100%;
+	    	justify-content: center;
+	    	align-items: center;
+	    }
+	}
+}
+
+#abnormal{
+	position: fixed;
+	right: 0;
+	bottom: -210px;
+	background: $white;
+	transform: rotate(0) scale(1);
+	
+	&.new{
+		bottom: 0;
+		transition: transform, bottom 1.5s;
+
+		.u-btn_error{
+			animation: shining 1s;
+			animation-iteration-count: infinite;
+
+			&:hover{
+				animation-name: none;
+			}
+		}
+
+		@at-root {
+			@keyframes shining{
+				49%{
+					background-color: $white;
+					color: $cError;
+				}
+				50%{
+					background-color: $cError;
+					color: $white;
+				}
+				100%{
+					background-color: $cError;
+					color: $white;
+				}
+			}
+		}
+	}
+
+	&.fade-out{
+		bottom: 0;
+		transition: all 1.5s;
+		transform: rotate(720deg) scale(0);
+	}
+	&.fade-out.handled{
+		bottom: 0;
+		transition: all 1.5s;
+		transform: translateX(360px);
+	}
+}
+
+//异常信息卡片
+.m-cards{
+	$color: #ee7600;
+	text-align: center;
+
+	.m-card-wrap{
+		position: relative;
+		display: inline-block;
+	    width: 350px;
+	    height: 200px;
+	    text-align: left;
+	    border: 2px solid $color;
+	    border-radius: 2px !important;
+		vertical-align: top;
+	    word-wrap: break-word;
+	    box-shadow: 0 0 5px $color;
+
+	    .m-card-head{
+	    	padding: 10px 10px;
+	    	color: $white;
+	    	background: $color;
+	    	.m-card-title{
+	    		font-size: 18px;
+	    	}
+	    	button{
+	    		position: absolute;
+			    top: 9px;
+			    right: 10px;
+	    	}
+	    }
+
+	    .m-card-content{
+			padding: 0 10px;
+			.m-card-name{
+				padding-top: 5px;
+				font-weight: bold;
+			}
+			.m-card-time{
+				padding: 5px 0;
+				color: $fcLiaghtGray;
+			}
+	    }
+	}
+}
+
+
+
+
+
+
+
+

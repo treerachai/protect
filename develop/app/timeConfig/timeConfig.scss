@@ -1,0 +1,29 @@
+@import '../../css/const';
+
+.time-wrapper{
+	width: 720px;
+	margin: 0 auto;
+	text-align: center;
+
+	.operate{
+		margin-top: $spLarge;
+	}
+}
+
+.p-time{
+	.item{
+		.time{
+			padding: $spSmall;
+			text-align: center;
+		}
+	}
+	.arror-r{
+		margin: 0 $spLarge;
+	}
+}
+
+.arror-r{
+	svg{
+		vertical-align: bottom;
+	}
+}

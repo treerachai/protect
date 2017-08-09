@@ -1,0 +1,36 @@
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+/*
+ * c : color
+ * fs: font-size
+ * sp: space
+ * cb: background color
+ * fc: font color
+*/
+.portlet .tools > button, .operate > button {
+  padding: 0 10px;
+  font-size: 14px; }
+
+input[type="checkbox"] {
+  vertical-align: top; }
+
+.operate > button {
+  margin-right: 10px; }
+
+.operate > button:last-child {
+  margin-right: 0; }
+
+.exchange {
+  display: inline-block;
+  text-align: center; }
+
+table tbody td label {
+  margin-right: 10px; }
+
+table tbody td label:last-child {
+  margin-right: 0; }
