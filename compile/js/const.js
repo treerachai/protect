@@ -8,6 +8,8 @@ define( function( require, exports, module ) {
 		DELETE_SUCCESS: '删除成功!',
 		DELETE_ERROR: '删除失败!',
 		FILL_DATA: '数据填写不完整',
+		RESET_SUCCESS: '重置成功',
+		RESET_ERROR: '重置失败',
 		TABLE_MIN_ROW: 5	//表格的最小行数
 	}
 } );

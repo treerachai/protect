@@ -158,7 +158,7 @@
                                             "</a>"+
                                         "</li>"+
                                         "<li class=\"nav-item start netService\">"+
-                                            "<a href=\""+contextPath+"/operator/abnormal\" class=\"nav-link\">"+
+                                            "<a href=\""+contextPath+"/operator/alarmConfig\" class=\"nav-link\">"+
                                                 "<i class=\"iconfont\">&#xe60f;</i>"+
                                                 "<span class=\"title\">报警配置</span>"+
                                                 "<span class=\"selected\"></span>"+

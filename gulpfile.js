@@ -9,12 +9,12 @@ var gulp = require('gulp'),
     sequence = require('gulp-run-sequence'),
     del = require('del'),
     Sass = require('gulp-sass'),
-    combine = require('gulp-seajs-combine');
+    combine = require('gulp-seajs-combine'),
+    GulpSSH = require('gulp-ssh');
 
 
 //ssh start
 (function(config) {
-  var GulpSSH = require('gulp-ssh');
   var sshConfig = config.ssh;
   var gulpSSH = new GulpSSH({
       ignoreErrors: false,

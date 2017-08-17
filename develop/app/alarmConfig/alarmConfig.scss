@@ -1,0 +1,30 @@
+@import '../../css/const';
+@import '../../css/mixin';
+
+#netConfig {
+    width: 730px;
+    margin: 0 auto;
+    text-align: center;
+    .text-left {
+        border: 1px solid #e7ecf1;
+        border-radius: 5px !important;
+        margin-bottom: 10px;
+        .label-cont {
+            height: 34px;
+            line-height: 34px;
+        }
+    }
+    .edit-ok {
+        display: none;
+        margin-right: 5px;
+    }
+    .edit-cancel {
+        display: none;
+    }
+    input:not(:disabled) {
+        cursor: pointer;
+    }
+}
+.reset {
+    float: right;
+}

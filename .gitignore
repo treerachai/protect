@@ -1,2 +1,6 @@
 #将一些文件取消git跟踪
 config.upload.js
+/node_modules
+/compile
+/服务器-git目录
+/文档-git目录
